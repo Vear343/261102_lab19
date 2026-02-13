@@ -1,4 +1,5 @@
 // Please include header (lab21.h) here.
+#include "lab19.h"
 
 int main(){
 	srand(time(0));
@@ -12,7 +13,7 @@ int main(){
 		mons.newTurn();	
 		hero.newTurn();			
 		mons.showStatus();
-		drawScene(player_action,p,monster_action,m);
+		drawScene(player_action,p,monster_action,m	);
 		hero.showStatus();		
 		cout << "[A] Attack [H] Heal [G] Guard [E] Exit";
 		cout << "\n[Turn " << turn_count << "] Enter your action: ";
